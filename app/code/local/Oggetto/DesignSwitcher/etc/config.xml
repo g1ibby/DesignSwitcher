@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Oggetto Web extension for Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade
+ * the Oggetto DesignSwitcher module to newer versions in the future.
+ * If you wish to customize the Oggetto DesignSwitcher module for your needs
+ * please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category   Oggetto
+ * @package    Oggetto_DesignSwitcher
+ * @copyright  Copyright (C) 2013 Oggetto Web (http://oggettoweb.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Oggetto_DesignSwitcher>
+            <version>1.0.0</version>
+        </Oggetto_DesignSwitcher>
+    </modules>
+
+    <global>
+        <blocks>
+            <oggetto_designswitcher>
+                <class>Oggetto_DesignSwitcher_Block</class>
+            </oggetto_designswitcher>
+        </blocks>
+
+        <models>
+            <oggetto_designswitcher>
+                <class>Oggetto_DesignSwitcher_Model</class>
+            </oggetto_designswitcher>
+
+            <core>
+                <rewrite>
+                    <design_package>Oggetto_DesignSwitcher_Model_Core_Design_Package</design_package>
+                </rewrite>
+            </core>
+
+            <enterprise_pagecache>
+                <rewrite>
+                    <processor>Oggetto_DesignSwitcher_Model_Pagecache_Processor</processor>
+                </rewrite>
+            </enterprise_pagecache>
+        </models>
+
+        <helpers>
+            <oggetto_designswitcher>
+                <class>Oggetto_DesignSwitcher_Helper</class>
+            </oggetto_designswitcher>
+        </helpers>
+    </global>
+
+    <frontend>
+        <routers>
+            <oggetto_designswitcher>
+                <use>standard</use>
+                <args>
+                    <module>Oggetto_DesignSwitcher</module>
+                    <frontName>designswitcher</frontName>
+                </args>
+            </oggetto_designswitcher>
+        </routers>
+        <layout>
+            <updates>
+                <oggetto_designswitcher>
+                    <file>oggetto/designswitcher.xml</file>
+                </oggetto_designswitcher>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Oggetto_DesignSwitcher>
+                    <files>
+                        <default>Oggetto_DesignSwitcher.csv</default>
+                    </files>
+                </Oggetto_DesignSwitcher>
+            </modules>
+        </translate>
+    </frontend>
+</config>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Oggetto_DesignSwitcher>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Core/>
+                <Mage_Catalog/>
+                <Enterprise_PageCache/>
+            </depends>
+        </Oggetto_DesignSwitcher>
+    </modules>
+</config>

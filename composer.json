@@ -1,0 +1,22 @@
+{
+    "name": "oggetto/design-switcher",
+    "type": "magento-module",
+    "license": "MIT",
+    "homepage": "https://github.com/wss-world/DesignSwitcher",
+    "description": "Adds a button to change the mobile version of the site with the standard and back",
+    "authors": [
+        {
+        	"name": "Sergei Waribrus",
+        	"email": "wss.world@gmail.com"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra": {
+        "map": [
+            ["app/etc/modules/Oggetto_DesignSwitcher.xml", "app/etc/modules/Oggetto_DesignSwitcher.xml"],
+            ["app/code/local/Oggetto/DesignSwitcher", "app/code/local/Oggetto/DesignSwitcher"]
+        ]
+    }
+}

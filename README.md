@@ -1,0 +1,1 @@
+Adds a button to change the mobile version of the site with the standard and back
